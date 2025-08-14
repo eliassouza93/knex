@@ -15,26 +15,6 @@ Uma API simples de gerenciamento de tarefas construída com **Node.js**, **Expre
 
 ---
 
-## Instalação
-
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/nome-do-repo.git
-cd nome-do-repo
-
-# Instale as dependências
-npm install
-
-# Configure o banco de dados no arquivo /src/database/knexfile.ts (ou .js)
-
-# Rode as migrações para criar a tabela
-npx knex migrate:latest
-
-# Inicie o servidor
-npm run dev
-
---
-
 # EXAMPLES
 
 import { knex } from '@/database';
@@ -139,3 +119,25 @@ export default class TaskController {
         }
     }
 }
+
+## Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/nome-do-repo.git
+cd nome-do-repo
+
+# Instale as dependências
+npm install
+
+# Configure o banco de dados no arquivo /src/database/knexfile.ts (ou .js)
+
+# Rode as migrações para criar a tabela
+npx knex migrate:latest
+
+# Inicie o servidor
+npm run dev
+
+--
+
+
