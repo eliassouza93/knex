@@ -33,7 +33,9 @@ npx knex migrate:latest
 # Inicie o servidor
 npm run dev
 
-#EXAMPLES
+--
+
+# EXAMPLES
 
 import { knex } from '@/database';
 import { NextFunction, Request, Response } from 'express';
