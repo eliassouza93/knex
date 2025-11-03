@@ -18,8 +18,6 @@ function validatePostTask(req: Request, res: Response, next: NextFunction) {
   next();
 }
 
-// Middleware para validar o corpo da requisição ao editar uma task //
-
 function validateEditTask(req: Request, res: Response, next: NextFunction) {
   const { task } = req.body;
 
