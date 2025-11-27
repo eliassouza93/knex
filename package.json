@@ -11,7 +11,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.13.2",
     "express": "^5.1.0",
+    "gender-detection": "^0.1.0",
     "knex": "^3.1.0",
     "sqlite3": "^5.1.7"
   },

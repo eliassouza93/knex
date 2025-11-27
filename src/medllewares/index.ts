@@ -1,30 +1,36 @@
 import { Request, Response, NextFunction } from "express";
 
 function validatePostTask(req: Request, res: Response, next: NextFunction) {
-  const { name, task } = req.body;
+  const { login, password } = req.body;
 
-  if (!name || typeof name !== "string") {
+  if (!login || typeof login !== "string") {
     return res
       .status(400)
-      .json({ message: 'O campo "name" é obrigatório e deve ser uma string.' });
+      .json({
+        message: 'O campo "login" é obrigatório e deve ser uma string.',
+      });
   }
 
-  if (!task || typeof task !== "string") {
+  if (!password || typeof password !== "string") {
     return res
       .status(400)
-      .json({ message: 'O campo "task" é obrigatório e deve ser uma string.' });
+      .json({
+        message: 'O campo "password" é obrigatório e deve ser uma string.',
+      });
   }
 
   next();
 }
 
 function validateEditTask(req: Request, res: Response, next: NextFunction) {
-  const { task } = req.body;
+  const { password } = req.body;
 
-  if (!task || typeof task !== "string") {
+  if (!password || typeof password !== "string") {
     return res
       .status(400)
-      .json({ message: 'O campo "task" é obrigatório e deve ser uma string.' });
+      .json({
+        message: 'O campo "password" é obrigatório e deve ser uma string.',
+      });
   }
 
   next();
